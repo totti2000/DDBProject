@@ -1,0 +1,353 @@
+{
+	"info": {
+		"_postman_id": "d69bd67e-8a4c-427e-95cd-263b7e762287",
+		"name": "courses",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21066874"
+	},
+	"item": [
+		{
+			"name": "addStudent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"de rossi\",\r\n    \"address\":\"menofia\",\r\n    \"mobile\":\"010\",\r\n    \"course\":[\"6286a753ddb3f6dd1d9c2790\",\"6286a8bfddb3f6dd1d9c2797\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/students/addStudents",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"students",
+						"addStudents"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getStudents",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/students/getStudents",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"students",
+						"getStudents"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateStudents",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"vinisios\",\r\n    \"address\":\"alex\",\r\n    \"mobile\":\"011\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/students/updateStudents/62869e95f011a672d2e420c1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"students",
+						"updateStudents",
+						"62869e95f011a672d2e420c1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteStudents",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/students/deleteStudents/62869e95f011a672d2e420c1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"students",
+						"deleteStudents",
+						"62869e95f011a672d2e420c1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addCources",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"a\",\r\n    \"numberOfHours\":\"7\",\r\n    \"student\":[\"62869e95f011a672d2e420c1\",\"6286a921ddb3f6dd1d9c279a\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/courses/addCources",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"courses",
+						"addCources"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCourses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/courses/getCourses",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"courses",
+						"getCourses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateCoursess",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"css\",\r\n    \"numberOfHours\":\"5\",\r\n    \"student\":[\"62869e95f011a672d2e420c1\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/courses/updateCoursess/6286a729ddb3f6dd1d9c278e",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"courses",
+						"updateCoursess",
+						"6286a729ddb3f6dd1d9c278e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteCourses",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/courses/deleteCourses/6286a729ddb3f6dd1d9c278e",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"courses",
+						"deleteCourses",
+						"6286a729ddb3f6dd1d9c278e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addProf",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"mohamed\",\r\n    \"address\":\"menofia\",\r\n    \"mobile\":\"010\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/profs/addProf",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"profs",
+						"addProf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getProf",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/profs/getProf",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"profs",
+						"getProf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addAggregation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"aggregation\":\"abc\",\r\n    \"Hours\":[2,3,4]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/agrr/addAggregation",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"agrr",
+						"addAggregation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAggregation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/agrr/getAggregation",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"agrr",
+						"getAggregation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "groupAggregation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/agrr/groupAggregation",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"agrr",
+						"groupAggregation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "unwindAggregation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/agrr/unwindAggregation",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"agrr",
+						"unwindAggregation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "matchAggregation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/agrr/matchAggregation",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"agrr",
+						"matchAggregation"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
